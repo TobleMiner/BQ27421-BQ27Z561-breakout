@@ -1,0 +1,677 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Fuel_Gauge_TI:BQ27421 U1
+U 1 1 61C20282
+P 4950 3450
+F 0 "U1" H 4950 3965 50  0000 C CNN
+F 1 "BQ27421" H 4950 3874 50  0000 C CNN
+F 2 "Package_DSBGA:DSBGA-9_1.6x1.6_P0.5mm" H 4950 3450 50  0001 C CNN
+F 3 "" H 4950 3450 50  0001 C CNN
+	1    4950 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 61C20B12
+P 5400 3700
+F 0 "C2" H 5492 3746 50  0000 L CNN
+F 1 "1uF" H 5492 3655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5400 3700 50  0001 C CNN
+F 3 "~" H 5400 3700 50  0001 C CNN
+	1    5400 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 3600 5400 3550
+Wire Wire Line
+	5400 3550 5350 3550
+$Comp
+L power:GND #PWR0101
+U 1 1 61C21882
+P 4950 3950
+F 0 "#PWR0101" H 4950 3700 50  0001 C CNN
+F 1 "GND" H 4955 3777 50  0000 C CNN
+F 2 "" H 4950 3950 50  0001 C CNN
+F 3 "" H 4950 3950 50  0001 C CNN
+	1    4950 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 3950 4950 3900
+$Comp
+L power:GND #PWR0102
+U 1 1 61C21D19
+P 5400 3950
+F 0 "#PWR0102" H 5400 3700 50  0001 C CNN
+F 1 "GND" H 5405 3777 50  0000 C CNN
+F 2 "" H 5400 3950 50  0001 C CNN
+F 3 "" H 5400 3950 50  0001 C CNN
+	1    5400 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 3950 5400 3800
+$Comp
+L Device:C_Small C1
+U 1 1 61C22809
+P 4050 3800
+F 0 "C1" H 4142 3846 50  0000 L CNN
+F 1 "1uF" H 4142 3755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4050 3800 50  0001 C CNN
+F 3 "~" H 4050 3800 50  0001 C CNN
+	1    4050 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 3200 4500 3200
+$Comp
+L power:GND #PWR0103
+U 1 1 61C22B0F
+P 4050 3950
+F 0 "#PWR0103" H 4050 3700 50  0001 C CNN
+F 1 "GND" H 4055 3777 50  0000 C CNN
+F 2 "" H 4050 3950 50  0001 C CNN
+F 3 "" H 4050 3950 50  0001 C CNN
+	1    4050 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 61C233AF
+P 4500 3850
+F 0 "R1" H 4441 3804 50  0000 R CNN
+F 1 "10k" H 4441 3895 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4500 3850 50  0001 C CNN
+F 3 "~" H 4500 3850 50  0001 C CNN
+	1    4500 3850
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 61C23B8B
+P 4500 3950
+F 0 "#PWR0104" H 4500 3700 50  0001 C CNN
+F 1 "GND" H 4505 3777 50  0000 C CNN
+F 2 "" H 4500 3950 50  0001 C CNN
+F 3 "" H 4500 3950 50  0001 C CNN
+	1    4500 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 3700 4500 3700
+Wire Wire Line
+	4500 3700 4500 3750
+Text Label 4300 3200 0    50   ~ 0
+BAT+
+Text Label 5600 3200 2    50   ~ 0
+LOAD
+Text Label 5600 3400 2    50   ~ 0
+GPOUT
+Text Label 4350 3400 0    50   ~ 0
+SDA
+Text Label 4350 3550 0    50   ~ 0
+SCL
+$Comp
+L Connector_Generic:Conn_01x03 J2
+U 1 1 61C2571E
+P 6150 3200
+F 0 "J2" H 6230 3242 50  0000 L CNN
+F 1 "Conn_01x03" H 6230 3151 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6150 3200 50  0001 C CNN
+F 3 "~" H 6150 3200 50  0001 C CNN
+	1    6150 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3200 5400 3200
+Wire Wire Line
+	5900 3100 5950 3100
+Connection ~ 4050 3200
+$Comp
+L power:GND #PWR0105
+U 1 1 61C26D59
+P 5900 3350
+F 0 "#PWR0105" H 5900 3100 50  0001 C CNN
+F 1 "GND" H 5905 3177 50  0000 C CNN
+F 2 "" H 5900 3350 50  0001 C CNN
+F 3 "" H 5900 3350 50  0001 C CNN
+	1    5900 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 3350 5900 3300
+Wire Wire Line
+	5900 3300 5950 3300
+$Comp
+L Connector_Generic:Conn_01x03 J1
+U 1 1 61C27D19
+P 3650 3400
+F 0 "J1" H 3730 3442 50  0000 L CNN
+F 1 "Conn_01x03" H 3730 3351 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3650 3400 50  0001 C CNN
+F 3 "~" H 3650 3400 50  0001 C CNN
+	1    3650 3400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 3900 4050 3950
+Wire Wire Line
+	4050 3200 4050 3700
+Wire Wire Line
+	3850 3400 4550 3400
+Wire Wire Line
+	3850 3500 4300 3500
+Wire Wire Line
+	4300 3500 4300 3550
+Wire Wire Line
+	4300 3550 4550 3550
+Wire Wire Line
+	3850 3300 3900 3300
+Wire Wire Line
+	5350 3400 5650 3400
+$Comp
+L Device:C_Small C3
+U 1 1 61C3364B
+P 4950 2800
+F 0 "C3" H 5042 2846 50  0000 L CNN
+F 1 "1uF" H 5042 2755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4950 2800 50  0001 C CNN
+F 3 "~" H 4950 2800 50  0001 C CNN
+	1    4950 2800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5650 2550 3900 2550
+Wire Wire Line
+	3900 2550 3900 3300
+Wire Wire Line
+	5650 2550 5650 3400
+Wire Wire Line
+	4050 2450 5900 2450
+Wire Wire Line
+	4050 2450 4050 3200
+Wire Wire Line
+	5900 2450 5900 3100
+Wire Wire Line
+	5050 2800 5400 2800
+Wire Wire Line
+	5400 2800 5400 3200
+Connection ~ 5400 3200
+Wire Wire Line
+	5400 3200 5950 3200
+Wire Wire Line
+	4850 2800 4500 2800
+Wire Wire Line
+	4500 2800 4500 3200
+Connection ~ 4500 3200
+Wire Wire Line
+	4500 3200 4050 3200
+$Comp
+L Fuel_Gauge_TI:BQ27Z561 U2
+U 1 1 61C3ACFF
+P 3950 6350
+F 0 "U2" H 3950 7081 50  0000 C CNN
+F 1 "BQ27Z561" H 3950 6990 50  0000 C CNN
+F 2 "Package_DSBGA:DSBGA-12_BQ27Z561_1.7x2.05mm_P0.5mm" H 4000 6300 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/bq27z561-r1.pdf?ts=1594185665565&ref_url=https%253A%252F%252Fwww.ti.com%252Fpower-management%252Fbattery-management%252Ffuel-gauges%252Fproducts.html" H 3950 7350 50  0001 C CNN
+	1    3950 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 7000 3950 6900
+Wire Wire Line
+	3400 6550 3300 6550
+Wire Wire Line
+	3300 6550 3300 7000
+Text Label 3100 6350 0    50   ~ 0
+SCL
+Text Label 3100 6250 0    50   ~ 0
+SDA
+Text Label 5800 5750 2    50   ~ 0
+B+
+Wire Wire Line
+	3950 5800 3950 5750
+Wire Wire Line
+	4500 6150 4550 6150
+$Comp
+L Device:C_Small C4
+U 1 1 61C404D0
+P 3050 6850
+F 0 "C4" H 3142 6896 50  0000 L CNN
+F 1 "1uF" H 3142 6805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3050 6850 50  0001 C CNN
+F 3 "~" H 3050 6850 50  0001 C CNN
+	1    3050 6850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3950 5750 3300 5750
+Text Label 3100 6650 0    50   ~ 0
+INT
+$Comp
+L Device:R_Small R2
+U 1 1 61C46C37
+P 4250 5750
+F 0 "R2" V 4054 5750 50  0000 C CNN
+F 1 "100R" V 4145 5750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4250 5750 50  0001 C CNN
+F 3 "~" H 4250 5750 50  0001 C CNN
+	1    4250 5750
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	4150 5750 3950 5750
+Connection ~ 3950 5750
+$Comp
+L Device:R_Small R5
+U 1 1 61C49762
+P 5150 6250
+F 0 "R5" V 4954 6250 50  0000 C CNN
+F 1 "100R" V 5045 6250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 5150 6250 50  0001 C CNN
+F 3 "~" H 5150 6250 50  0001 C CNN
+	1    5150 6250
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:C_Small C6
+U 1 1 61C4A41D
+P 4850 6400
+F 0 "C6" H 4942 6446 50  0000 L CNN
+F 1 "100nF" H 4942 6355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4850 6400 50  0001 C CNN
+F 3 "~" H 4850 6400 50  0001 C CNN
+	1    4850 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R6
+U 1 1 61C508E7
+P 5150 6550
+F 0 "R6" V 4954 6550 50  0000 C CNN
+F 1 "100R" V 5045 6550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 5150 6550 50  0001 C CNN
+F 3 "~" H 5150 6550 50  0001 C CNN
+	1    5150 6550
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R_Small R7
+U 1 1 61C52F59
+P 5350 6400
+F 0 "R7" H 5291 6446 50  0000 R CNN
+F 1 "5mR" H 5291 6355 50  0000 R CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 5350 6400 50  0001 C CNN
+F 3 "~" H 5350 6400 50  0001 C CNN
+	1    5350 6400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 6250 5350 6300
+$Comp
+L Device:R_Small R4
+U 1 1 61C5B782
+P 4550 6800
+F 0 "R4" H 4491 6754 50  0000 R CNN
+F 1 "10k" H 4491 6845 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4550 6800 50  0001 C CNN
+F 3 "~" H 4550 6800 50  0001 C CNN
+	1    4550 6800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 7000 4550 6900
+Wire Wire Line
+	4500 6650 4550 6650
+Wire Wire Line
+	4550 6650 4550 6700
+Wire Wire Line
+	3300 7000 3950 7000
+Connection ~ 3950 7000
+Wire Wire Line
+	3950 7000 4550 7000
+Text Label 4350 7000 0    50   ~ 0
+B-
+Connection ~ 4550 7000
+Text Label 5600 7000 2    50   ~ 0
+B-
+$Comp
+L Device:R_Small R3
+U 1 1 61C69D6F
+P 4550 5950
+F 0 "R3" V 4354 5950 50  0000 C CNN
+F 1 "100R" V 4445 5950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 4550 5950 50  0001 C CNN
+F 3 "~" H 4550 5950 50  0001 C CNN
+	1    4550 5950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 5850 4550 5750
+Wire Wire Line
+	4550 6050 4550 6150
+Wire Wire Line
+	3050 6950 3050 7000
+Wire Wire Line
+	3050 7000 3300 7000
+Connection ~ 3300 7000
+Wire Wire Line
+	3050 6750 3050 5750
+Wire Wire Line
+	4550 7000 4850 7000
+$Comp
+L Device:C_Small C7
+U 1 1 61C79191
+P 4850 6850
+F 0 "C7" H 4942 6896 50  0000 L CNN
+F 1 "100nF" H 4942 6805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4850 6850 50  0001 C CNN
+F 3 "~" H 4850 6850 50  0001 C CNN
+	1    4850 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 5750 4550 5750
+Connection ~ 4550 5750
+Wire Wire Line
+	5350 6500 5350 6550
+Wire Wire Line
+	5350 6250 5250 6250
+Wire Wire Line
+	5350 6550 5250 6550
+Connection ~ 5350 6550
+Wire Wire Line
+	5350 6550 5350 7000
+$Comp
+L Device:C_Small C5
+U 1 1 61C85FA8
+P 4850 5900
+F 0 "C5" H 4942 5946 50  0000 L CNN
+F 1 "100nF" H 4942 5855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4850 5900 50  0001 C CNN
+F 3 "~" H 4850 5900 50  0001 C CNN
+	1    4850 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 6550 4850 6750
+Connection ~ 4850 6550
+Wire Wire Line
+	4850 6950 4850 7000
+Connection ~ 4850 7000
+Wire Wire Line
+	4850 7000 5350 7000
+Connection ~ 4850 6250
+Wire Wire Line
+	4850 5500 3050 5500
+Wire Wire Line
+	3050 5500 3050 5750
+Connection ~ 3050 5750
+Wire Wire Line
+	4500 6350 4550 6350
+Wire Wire Line
+	4500 6450 4550 6450
+Wire Wire Line
+	4850 6550 4550 6550
+Wire Wire Line
+	4550 6550 4550 6450
+Wire Wire Line
+	4850 6250 4550 6250
+Wire Wire Line
+	4550 6250 4550 6350
+Wire Wire Line
+	4850 6300 4850 6250
+Wire Wire Line
+	4850 6500 4850 6550
+Wire Wire Line
+	4850 6550 5050 6550
+Wire Wire Line
+	4850 6250 5050 6250
+Wire Wire Line
+	4850 6000 4850 6250
+Wire Wire Line
+	4850 5800 4850 5500
+Wire Wire Line
+	3400 6050 3300 6050
+Wire Wire Line
+	3300 6050 3300 5750
+Connection ~ 3300 5750
+Wire Wire Line
+	3300 5750 3050 5750
+Connection ~ 5350 7000
+$Comp
+L Connector_Generic:Conn_01x03 J3
+U 1 1 61CAC483
+P 2600 6250
+F 0 "J3" H 2680 6292 50  0000 L CNN
+F 1 "Conn_01x03" H 2680 6201 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2600 6250 50  0001 C CNN
+F 3 "~" H 2600 6250 50  0001 C CNN
+	1    2600 6250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 6250 3400 6250
+Wire Wire Line
+	2800 6350 3400 6350
+Wire Wire Line
+	2900 6650 3400 6650
+$Comp
+L Connector_Generic:Conn_01x03 J4
+U 1 1 61CB5C00
+P 6200 5950
+F 0 "J4" H 6280 5992 50  0000 L CNN
+F 1 "Conn_01x03" H 6280 5901 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6200 5950 50  0001 C CNN
+F 3 "~" H 6200 5950 50  0001 C CNN
+	1    6200 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 5750 5850 5750
+Connection ~ 5350 6250
+Wire Wire Line
+	2800 6150 2900 6150
+Wire Wire Line
+	2900 6150 2900 6650
+Wire Wire Line
+	5350 5850 5350 6250
+Wire Wire Line
+	5350 5850 6000 5850
+Wire Wire Line
+	5350 7000 5650 7000
+Wire Wire Line
+	6000 5950 5650 5950
+Wire Wire Line
+	5650 5950 5650 7000
+Wire Wire Line
+	6000 6050 5850 6050
+Wire Wire Line
+	5850 6050 5850 5750
+$Comp
+L Device:C_Small C8
+U 1 1 61CE3541
+P 4700 6150
+F 0 "C8" H 4792 6196 50  0000 L CNN
+F 1 "100nF" H 4792 6105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4700 6150 50  0001 C CNN
+F 3 "~" H 4700 6150 50  0001 C CNN
+	1    4700 6150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4600 6150 4550 6150
+Connection ~ 4550 6150
+Wire Wire Line
+	4800 6150 5000 6150
+Text Label 5000 6150 2    50   ~ 0
+B-
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 61CF430E
+P 10550 600
+F 0 "H1" H 10650 646 50  0000 L CNN
+F 1 "Perforation" H 10650 555 50  0000 L CNN
+F 2 "Perforation:Perforation_0.4mm" H 10550 600 50  0001 C CNN
+F 3 "~" H 10550 600 50  0001 C CNN
+	1    10550 600 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 61CFA5AE
+P 10550 800
+F 0 "H2" H 10650 846 50  0000 L CNN
+F 1 "Perforation" H 10650 755 50  0000 L CNN
+F 2 "Perforation:Perforation_0.4mm" H 10550 800 50  0001 C CNN
+F 3 "~" H 10550 800 50  0001 C CNN
+	1    10550 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 61CFCAED
+P 10550 1000
+F 0 "H3" H 10650 1046 50  0000 L CNN
+F 1 "Perforation" H 10650 955 50  0000 L CNN
+F 2 "Perforation:Perforation_0.4mm" H 10550 1000 50  0001 C CNN
+F 3 "~" H 10550 1000 50  0001 C CNN
+	1    10550 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 61CFF029
+P 10550 1200
+F 0 "H4" H 10650 1246 50  0000 L CNN
+F 1 "Perforation" H 10650 1155 50  0000 L CNN
+F 2 "Perforation:Perforation_0.4mm" H 10550 1200 50  0001 C CNN
+F 3 "~" H 10550 1200 50  0001 C CNN
+	1    10550 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 61D03724
+P 10550 2150
+F 0 "H5" H 10650 2196 50  0000 L CNN
+F 1 "Perforation" H 10650 2105 50  0000 L CNN
+F 2 "Perforation:Perforation_0.4mm" H 10550 2150 50  0001 C CNN
+F 3 "~" H 10550 2150 50  0001 C CNN
+	1    10550 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H6
+U 1 1 61D0372A
+P 10550 1400
+F 0 "H6" H 10650 1446 50  0000 L CNN
+F 1 "Perforation" H 10650 1355 50  0000 L CNN
+F 2 "Perforation:Perforation_0.4mm" H 10550 1400 50  0001 C CNN
+F 3 "~" H 10550 1400 50  0001 C CNN
+	1    10550 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H7
+U 1 1 61D03730
+P 10550 1600
+F 0 "H7" H 10650 1646 50  0000 L CNN
+F 1 "Perforation" H 10650 1555 50  0000 L CNN
+F 2 "Perforation:Perforation_0.4mm" H 10550 1600 50  0001 C CNN
+F 3 "~" H 10550 1600 50  0001 C CNN
+	1    10550 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H8
+U 1 1 61D03736
+P 10550 1800
+F 0 "H8" H 10650 1846 50  0000 L CNN
+F 1 "Perforation" H 10650 1755 50  0000 L CNN
+F 2 "Perforation:Perforation_0.4mm" H 10550 1800 50  0001 C CNN
+F 3 "~" H 10550 1800 50  0001 C CNN
+	1    10550 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H9
+U 1 1 61D10C52
+P 10550 2350
+F 0 "H9" H 10650 2396 50  0000 L CNN
+F 1 "Perforation" H 10650 2305 50  0000 L CNN
+F 2 "Perforation:Perforation_0.4mm" H 10550 2350 50  0001 C CNN
+F 3 "~" H 10550 2350 50  0001 C CNN
+	1    10550 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H10
+U 1 1 61D10C58
+P 10550 2550
+F 0 "H10" H 10650 2596 50  0000 L CNN
+F 1 "Perforation" H 10650 2505 50  0000 L CNN
+F 2 "Perforation:Perforation_0.4mm" H 10550 2550 50  0001 C CNN
+F 3 "~" H 10550 2550 50  0001 C CNN
+	1    10550 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H11
+U 1 1 61D10C5E
+P 10550 2750
+F 0 "H11" H 10650 2796 50  0000 L CNN
+F 1 "Perforation" H 10650 2705 50  0000 L CNN
+F 2 "Perforation:Perforation_0.4mm" H 10550 2750 50  0001 C CNN
+F 3 "~" H 10550 2750 50  0001 C CNN
+	1    10550 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H12
+U 1 1 61D10C64
+P 10550 2950
+F 0 "H12" H 10650 2996 50  0000 L CNN
+F 1 "Perforation" H 10650 2905 50  0000 L CNN
+F 2 "Perforation:Perforation_0.4mm" H 10550 2950 50  0001 C CNN
+F 3 "~" H 10550 2950 50  0001 C CNN
+	1    10550 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H13
+U 1 1 61D10C6A
+P 10550 3150
+F 0 "H13" H 10650 3196 50  0000 L CNN
+F 1 "Perforation" H 10650 3105 50  0000 L CNN
+F 2 "Perforation:Perforation_0.4mm" H 10550 3150 50  0001 C CNN
+F 3 "~" H 10550 3150 50  0001 C CNN
+	1    10550 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H14
+U 1 1 61D10C70
+P 10550 3350
+F 0 "H14" H 10650 3396 50  0000 L CNN
+F 1 "Perforation" H 10650 3305 50  0000 L CNN
+F 2 "Perforation:Perforation_0.4mm" H 10550 3350 50  0001 C CNN
+F 3 "~" H 10550 3350 50  0001 C CNN
+	1    10550 3350
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

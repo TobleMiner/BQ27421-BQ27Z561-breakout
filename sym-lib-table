@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Fuel_Gauge_TI)(type Legacy)(uri ${KIPRJMOD}/lib/Fuel_Gauge_TI.lib)(options "")(descr ""))
+)
